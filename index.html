@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="config.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Translator</title>
+</head>
+<body>
+    <h1>Translator App</h1>
+    <form>
+        <div class="left">
+            <select name="from" id="source">
+                <option value="ar">Arabic</option>
+                <option value="en" selected>English</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="hi">Hindi</option>
+                <option value="it">Italian</option>
+                <option value="ja">Japanese</option>
+                <option value="ml">Malayalam</option>
+                <option value="pt">Portuguese</option>
+                <option value="es">Spanish</option>
+            </select>
+            <textarea wrap="hard" id='from' placeholder="Enter text"></textarea>
+        </div>
+        <div class="center">
+            <div id="icon">
+                <i class="fa-solid fa-right-left"></i>
+            </div>
+        </div>
+        <div class="right">
+            <select name="from" id="target">
+                <option value="ar">Arabic</option>
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="hi">Hindi</option>
+                <option value="it">Italian</option>
+                <option value="ja">Japanese</option>
+                <option value="ml">Malayalam</option>
+                <option value="pt">Portuguese</option>
+                <option value="es" selected>Spanish</option>
+            </select>
+            <textarea wrap="hard" id="to" placeholder="Translation"></textarea>
+        </div>
+    </form>
+    <button id="button">Translate</button>
+</body>
+</html>
